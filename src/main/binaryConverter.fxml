@@ -6,64 +6,46 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="SimpleBinary" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+<AnchorPane fx:id="SimpleBinary" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
     <children>
-        <Label alignment="CENTER" contentDisplay="TOP" focusTraversable="false" layoutY="-1.0" prefHeight="62.0"
-               prefWidth="600.0" style="-fx-background-color: #3273db;" text="SIMPLE BINARY CONVERTER"
-               textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+        <Label alignment="CENTER" contentDisplay="TOP" focusTraversable="false" layoutY="-1.0" prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: #3273db;" text="SIMPLE BINARY CONVERTER" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
             <font>
-                <Font name="Oswald Bold" size="25.0"/>
+                <Font name="Oswald Bold" size="25.0" />
             </font>
         </Label>
-        <TextField fx:id="inputNumToConvert" layoutX="113.0" layoutY="135.0" prefHeight="26.0" prefWidth="380.0"
-                   promptText="Input a decimal number"
-                   style="-fx-background-radius: silver; -fx-background-color: #fafafa; -fx-background-radius: 30;">
+        <TextField fx:id="inputNumToConvert" layoutX="113.0" layoutY="135.0" prefHeight="26.0" prefWidth="380.0" promptText="Input a decimal number" style="-fx-background-radius: silver; -fx-background-color: #fafafa; -fx-background-radius: 30;">
             <font>
-                <Font size="17.0"/>
+                <Font size="17.0" />
             </font>
         </TextField>
-        <TextField fx:id="outputConvertedNum" editable="false" focusTraversable="false" layoutX="113.0" layoutY="189.0"
-                   prefHeight="26.0" prefWidth="380.0" promptText="The result goes here"
-                   style="-fx-background-color: #fafafa; -fx-background-radius: 35;">
+        <TextField fx:id="outputConvertedNum" editable="false" focusTraversable="false" layoutX="113.0" layoutY="189.0" prefHeight="26.0" prefWidth="380.0" promptText="The result goes here" style="-fx-background-color: #fafafa; -fx-background-radius: 35;">
             <font>
-                <Font size="17.0"/>
+                <Font size="17.0" />
             </font>
         </TextField>
-        <Button fx:id="sumbitToConvert" layoutX="113.0" layoutY="249.0" mnemonicParsing="false" prefHeight="46.0"
-                prefWidth="380.0" style="-fx-background-radius: 35; -fx-background-color: #42f448;" text="Convert"
-                textFill="WHITE">
+        <Button fx:id="sumbitToConvert" layoutX="113.0" layoutY="249.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="380.0" style="-fx-background-radius: 35; -fx-background-color: #42f448;" text="Convert" textFill="WHITE">
             <font>
-                <Font name="Oswald SemiBold" size="21.0"/>
+                <Font name="Oswald SemiBold" size="21.0" />
             </font>
         </Button>
-        <Label fx:id="errorLabel" alignment="CENTER" focusTraversable="false" layoutX="112.0" layoutY="89.0"
-               prefHeight="18.0" prefWidth="380.0" text="Error!" textAlignment="CENTER" textFill="#e80000"
-               visible="false">
+        <Label fx:id="errorLabel" alignment="CENTER" focusTraversable="false" layoutX="112.0" layoutY="89.0" prefHeight="18.0" prefWidth="380.0" text="Error!" textAlignment="CENTER" textFill="#e80000" visible="false">
             <font>
-                <Font name="Oswald Regular" size="25.0"/>
+                <Font name="Oswald Regular" size="25.0" />
             </font>
         </Label>
-        <Label fx:id="labelCanBeByte" alignment="CENTER" layoutX="189.0" layoutY="312.0" prefHeight="38.0"
-               prefWidth="54.0" style="-fx-background-color: #42f448; -fx-background-radius: 45;" text="BYTE"
-               textFill="WHITE">
+        <Label fx:id="labelCanBeByte" alignment="CENTER" layoutX="189.0" layoutY="312.0" prefHeight="38.0" prefWidth="54.0" style="-fx-background-color: #f45042; -fx-background-radius: 45;" text="BYTE" textFill="WHITE">
             <font>
-                <Font name="Oswald Bold" size="15.0"/>
+                <Font name="Oswald Bold" size="15.0" />
             </font>
         </Label>
-        <Label fx:id="labelCanBeShort" alignment="CENTER" layoutX="281.0" layoutY="312.0" prefHeight="38.0"
-               prefWidth="53.0" style="-fx-background-color: #42f448; -fx-background-radius: 45;" text="SHORT"
-               textFill="WHITE">
+        <Label fx:id="labelCanBeShort" alignment="CENTER" layoutX="281.0" layoutY="312.0" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #f45042; -fx-background-radius: 45;" text="SHORT" textFill="WHITE">
             <font>
-                <Font name="Oswald Bold" size="15.0"/>
+                <Font name="Oswald Bold" size="15.0" />
             </font>
         </Label>
-        <Label fx:id="labelCanBeInt" alignment="CENTER" layoutX="360.0" layoutY="310.0" prefHeight="38.0"
-               prefWidth="54.0" style="-fx-background-color: #42f448; -fx-background-radius: 45;" text="INT"
-               textFill="WHITE">
+        <Label fx:id="labelCanBeInt" alignment="CENTER" layoutX="360.0" layoutY="310.0" prefHeight="38.0" prefWidth="54.0" style="-fx-background-color: #f45042; -fx-background-radius: 45;" text="INT" textFill="WHITE">
             <font>
-                <Font name="Oswald Bold" size="15.0"/>
+                <Font name="Oswald Bold" size="15.0" />
             </font>
         </Label>
     </children>
