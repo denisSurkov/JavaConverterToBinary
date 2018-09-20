@@ -25,5 +25,6 @@ hs_err_pid*
 # idea stuff
 *.iml
 .idea/
+out/
 
-!SimpleConverter.jav
+!SimpleConverter.jar
