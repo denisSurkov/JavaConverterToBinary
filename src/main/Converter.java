@@ -36,4 +36,30 @@ public class Converter {
 
         return answer.toString();
     }
+
+    public static boolean checkCanBeByte(long x){
+        if (x <= 127 && x >= -128){
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean checkCanBeShort(long x){
+        if (x >= -32768 && x <= 32767){
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean checkCanBeInt(long x){
+        if (x >= -2147483648 && x <= 2147483647){
+            return true;
+        }
+        return false;
+    }
+
+
+    public static boolean checkCanBeLong(long x){
+        return true;
+    }
 }
